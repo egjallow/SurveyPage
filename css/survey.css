@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+body{
+	background: #ED5C4D;
+	font-family: 'Roboto Condensed', sans-serif;
+	
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 10px auto;
+	background: #F4E9DA;
+	font-size: 18px
+}
+
+
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	margin: 10px
+}
+
+div{
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+
+label{
+  padding-bottom: 10px;
+}
+
+input, select{
+  padding: 10px;
+	
+}
+input[type='text'],
+input[type = 'number'],
+select{
+	border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+textarea{
+	width: 100%;
+	resize: none;
+	margin-bottom: 25px;
+	border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+	
+}
+
+input[type=submit]{
+  width: 100%;
+  padding: 10px;
+	margin: 10px,10px, 10px;
+	
+} 
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 5px;
+}
+
+@media only screen and (max-width: 475px) {
+	.container{
+		width: 100%;
+	}
+	
+}
+
+@media only screen and (min-width: 900px) {
+	
+	.container{
+		width:60%
+	}
+	
+	form{
+		width:80%;
+		margin:10px auto
+		
+	}
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/survey.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class = 'container'>
+        <header>
+            <h1 id = 'title'>Dee's Restuarant Survey Form</h1>
+            <p id="description">Please let us know how was the food and our sevice</p>
+        </header>
+        <form id="survey-form">
+          <div>
+          <label id="name-label" for="name">Name: </label>
+              <input id="name" type="text"  placeholder="Enter Your Full Name" required>
+          </div>
+          <div>
+            <label id= 'email-label' for = 'email'> Email:</label>
+                <input id="email"type = "email" placeholder= " example@mail.com" required>
+          </div>
+          <div>
+            <label  id="number-label" for="age">Age: </label>
+            <input id="number" type = "Number" placeholder = " Age" min = '5' max= '60'required>
+          </div>
+              <div>
+              <label for="">How did you see our services?</label><br>
+              <label for="services">
+              <input type="checkbox"  value="poor">
+              Poor
+              </label>
+              <label>
+                  <input type="checkbox"  value="satisfactory">
+                  Satisfactory
+              </label>
+              <label>
+                  <input type="checkbox" value="average">
+                  Average
+              </label>
+              <label>
+                  <input type="checkbox"  value="Excellent">
+                  Excellent
+              </label>
+              </div>
+              <div>
+              <label for="dishes">Which of local Dishes did you like?</label>
+              <select id="dropdown" name=" food">
+                <option value=""></option>
+                <option value="">Benachin</option>
+                <option value="">Bahal</option>
+                <option value="">Domaada</option>
+              </select>
+          </div>
+              <div>
+            <label>Will you  recommend our resturant to a friens or family memembers?</label><br>
+            <label>
+              <input type="radio" name="reco" value="yes">
+              Yes
+            </label>
+            <label>
+              <input type="radio" name="reco" value="no">
+              No
+          </label>
+            <label>
+              <input type="radio" name="reco" value="maybe">
+              Maybe
+          </label>
+          </div>
+              <div >
+              <label for = "Suggestion">Any Suggestion on how to improve our services?</label><br>
+              <textarea name="Suggestion" rows="8" cols="80"></textarea>
+                  <input id='submit' type="submit" name="submit" value="Submit">	
+          </div>	
+                                                                                                          
+        </form>
+        
+      </div>
+</body>
+</html>
